@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Academic personal website of Padiyappa Koogati">
+<title>Padiyappa Koogati | About</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body { font-size: 18px !important; line-height: 1.7 !important; }
+.nav-links a { font-size: 17px !important; }
+.brand { font-size: 20px !important; }
+.small-label { font-size: 15px !important; }
+.hero h1 { font-size: 52px !important; line-height: 1.05 !important; }
+.hero h2 { font-size: 27px !important; line-height: 1.35 !important; }
+.hero .intro { font-size: 20px !important; line-height: 1.7 !important; }
+.section h2, .contact h2 { font-size: 34px !important; line-height: 1.25 !important; }
+.section h3, .contact h3 { font-size: 21px !important; }
+p, li { font-size: 18px !important; }
+table { font-size: 17px !important; }
+th, td { padding: 14px 16px !important; }
+.quick-card b { font-size: 17px !important; }
+.quick-card small { font-size: 15px !important; }
+.interest p, .subjects p, .experience-list p, .experience-list small,
+.admin-grid span, .publication p, .pub-grid li, .workshop-grid span,
+.skill-block p, .contact-details p, .social-note { font-size: 17px !important; }
+.btn { font-size: 17px !important; }
+footer { font-size: 16px !important; }
+
+/* Make each menu item a separate page */
+.page-section { min-height: calc(100vh - 90px); display:flex; align-items:flex-start; }
+</style>
+
+</head>
+<body>
+<header class="topbar">
+<nav class="nav">
+<a class="brand" href="home.html">PADIYAPPA KOOGATI</a>
+<button class="menu-btn" aria-label="Open menu">☰</button>
+<div class="nav-links">
+<a href="home.html">Home</a>
+<a href="about.html" class="active">About</a>
+<a href="academic.html">Academic</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="experience.html">Experience</a>
+<a href="workshops.html">Workshops</a>
+<a href="skills.html">Skills</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="page-section section about">
+  <div class="section-inner about-grid">
+    <div>
+      <p class="small-label">ABOUT ME</p>
+      <h2>Teaching, research and academic leadership.</h2>
+      <p class="text">
+        I was an Assistant Professor in Computer Science with 14.5 years of teaching
+        experience. My professional journey includes teaching, academic coordination,
+        website coordination, IQAC coordination and departmental leadership.
+      </p>
+      <p class="text">
+        I have served as HOD-CSE and Information Technology Center Head, and have
+        contributed to academic and institutional activities through coordination
+        and technology initiatives.
+      </p>
+    </div>
+    <div class="quick-card">
+      <div class="quick-row"><span class="icon">🎓</span><div><b>PhD(Pursuing), NITK Surathkal</b><small>2026 </div></div>
+      <div class="quick-row"><span class="icon">🎓</span><div><b>M.Tech (CS), NITK Surathkal</b><small>2009-2011 </div></div>
+      <div class="quick-row"><span class="icon">🎓</span><div><b>B.E (CSE), KLE'S CET, Belgaum</b><small>2005-2009 </div></div>
+      <div class="quick-row"><span class="icon">▣</span><div><b>Teaching Experience</b><small>14.5 Years</small></div></div>
+      <div class="quick-row"><span class="icon">★</span><div><b>GATE Qualified</b><small>2009</small></div></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><span>© 2026 Padiyappa Koogati</span><a href="home.html">Back to home ↑</a></footer>
+
+<script>
+const btn=document.querySelector('.menu-btn');
+const nav=document.querySelector('.nav-links');
+if (btn) btn.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+
+</body>
+</html>

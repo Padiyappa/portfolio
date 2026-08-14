@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Academic personal website of Padiyappa Koogati">
+<title>Padiyappa Koogati | Workshops</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body { font-size: 18px !important; line-height: 1.7 !important; }
+.nav-links a { font-size: 17px !important; }
+.brand { font-size: 20px !important; }
+.small-label { font-size: 15px !important; }
+.hero h1 { font-size: 52px !important; line-height: 1.05 !important; }
+.hero h2 { font-size: 27px !important; line-height: 1.35 !important; }
+.hero .intro { font-size: 20px !important; line-height: 1.7 !important; }
+.section h2, .contact h2 { font-size: 34px !important; line-height: 1.25 !important; }
+.section h3, .contact h3 { font-size: 21px !important; }
+p, li { font-size: 18px !important; }
+table { font-size: 17px !important; }
+th, td { padding: 14px 16px !important; }
+.quick-card b { font-size: 17px !important; }
+.quick-card small { font-size: 15px !important; }
+.interest p, .subjects p, .experience-list p, .experience-list small,
+.admin-grid span, .publication p, .pub-grid li, .workshop-grid span,
+.skill-block p, .contact-details p, .social-note { font-size: 17px !important; }
+.btn { font-size: 17px !important; }
+footer { font-size: 16px !important; }
+
+/* Make each menu item a separate page */
+.page-section { min-height: calc(100vh - 90px); display:flex; align-items:flex-start; }
+</style>
+
+</head>
+<body>
+<header class="topbar">
+<nav class="nav">
+<a class="brand" href="home.html">PADIYAPPA KOOGATI</a>
+<button class="menu-btn" aria-label="Open menu">☰</button>
+<div class="nav-links">
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="academic.html">Academic</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="experience.html">Experience</a>
+<a href="workshops.html" class="active">Workshops</a>
+<a href="skills.html">Skills</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="page-section section">
+  <div class="section-inner">
+    <p class="small-label">PROFESSIONAL DEVELOPMENT</p>
+    <h2>Workshops &amp; FDPs</h2>
+    <div class="workshop-grid">
+      <div><b>Parallel Algorithms</b><span>IUCEE-FLI · NITK Surathkal · 2010</span></div>
+      <div><b>Research Methodology</b><span>RYMEC, Bellary · 2012</span></div>
+      <div><b>Ethical Hacking</b><span>Maratha Mandal Engg. College · 2012</span></div>
+      <div><b>Computer Networks &amp; NS3</b><span>Amrita School of Engineering · 2014</span></div>
+      <div><b>Machine Learning &amp; Deep Learning</b><span>Reva University, Bengaluru · 2017</span></div>
+      <div><b>Design &amp; Analysis of Algorithms</b><span>TEQIP-1.3, VTU · 2018</span></div>
+      <div><b>Data Science &amp; Machine Learning using Python</b><span>MMEC, Belgaum · 2018</span></div>
+      <div><b>Microsoft 21st Century Tools</b><span>MMEC · 2022</span></div>
+      <div><b>Medico-Engino Hackathon</b><span>MMEC · 2024</span></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><span>© 2026 Padiyappa Koogati</span><a href="home.html">Back to home ↑</a></footer>
+
+<script>
+const btn=document.querySelector('.menu-btn');
+const nav=document.querySelector('.nav-links');
+if (btn) btn.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Academic personal website of Padiyappa Koogati">
+<title>Padiyappa Koogati | Experience</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body { font-size: 18px !important; line-height: 1.7 !important; }
+.nav-links a { font-size: 17px !important; }
+.brand { font-size: 20px !important; }
+.small-label { font-size: 15px !important; }
+.hero h1 { font-size: 52px !important; line-height: 1.05 !important; }
+.hero h2 { font-size: 27px !important; line-height: 1.35 !important; }
+.hero .intro { font-size: 20px !important; line-height: 1.7 !important; }
+.section h2, .contact h2 { font-size: 34px !important; line-height: 1.25 !important; }
+.section h3, .contact h3 { font-size: 21px !important; }
+p, li { font-size: 18px !important; }
+table { font-size: 17px !important; }
+th, td { padding: 14px 16px !important; }
+.quick-card b { font-size: 17px !important; }
+.quick-card small { font-size: 15px !important; }
+.interest p, .subjects p, .experience-list p, .experience-list small,
+.admin-grid span, .publication p, .pub-grid li, .workshop-grid span,
+.skill-block p, .contact-details p, .social-note { font-size: 17px !important; }
+.btn { font-size: 17px !important; }
+footer { font-size: 16px !important; }
+
+/* Make each menu item a separate page */
+.page-section { min-height: calc(100vh - 90px); display:flex; align-items:flex-start; }
+</style>
+
+</head>
+<body>
+<header class="topbar">
+<nav class="nav">
+<a class="brand" href="home.html">PADIYAPPA KOOGATI</a>
+<button class="menu-btn" aria-label="Open menu">☰</button>
+<div class="nav-links">
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="academic.html">Academic</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="experience.html" class="active">Experience</a>
+<a href="workshops.html">Workshops</a>
+<a href="skills.html">Skills</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="page-section section dark">
+  <div class="section-inner">
+    <p class="small-label">PROFESSIONAL EXPERIENCE</p>
+    <h2>Academic Experience</h2>
+    <div class="experience-list">
+      <article><div class="year">2025</div><div><h3>Assistant Professor</h3><p>AITM, Belagavi</p><small>01/02/2025 – 18/12/2025 · 11 months</small></div></article>
+      <article><div class="year">2024–25</div><div><h3>Assistant Professor</h3><p>SGBIT, Belagavi</p><small>10/09/2024 – 31/01/2025 · 05 months</small></div></article>
+      <article><div class="year">2011–24</div><div><h3>Assistant Professor</h3><p>MMEC, Belagavi</p><small>08/08/2011 – 10/09/2024 · 13.1 years</small></div></article>
+    </div>
+    <h3 class="subheading">Administrative Experience</h3>
+    <div class="admin-grid">
+      <div><b>HOD – CSE</b><span>MMEC Belagavi · 01/01/2023 – 10/09/2024</span></div>
+      <div><b>Information Technology Center Head</b><span>MMEC Belagavi · 01/09/2022 – 10/09/2024</span></div>
+      <div><b>College Website Coordinator</b><span>7 years · Maintenance and updating website</span></div>
+      <div><b>Department Academic Coordinator</b><span>6 years</span></div>
+      <div><b>IQAC Coordinator</b><span>1 year</span></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><span>© 2026 Padiyappa Koogati</span><a href="home.html">Back to home ↑</a></footer>
+
+<script>
+const btn=document.querySelector('.menu-btn');
+const nav=document.querySelector('.nav-links');
+if (btn) btn.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+
+</body>
+</html>

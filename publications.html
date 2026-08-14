@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Academic personal website of Padiyappa Koogati">
+<title>Padiyappa Koogati | Publications</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body { font-size: 18px !important; line-height: 1.7 !important; }
+.nav-links a { font-size: 17px !important; }
+.brand { font-size: 20px !important; }
+.small-label { font-size: 15px !important; }
+.hero h1 { font-size: 52px !important; line-height: 1.05 !important; }
+.hero h2 { font-size: 27px !important; line-height: 1.35 !important; }
+.hero .intro { font-size: 20px !important; line-height: 1.7 !important; }
+.section h2, .contact h2 { font-size: 34px !important; line-height: 1.25 !important; }
+.section h3, .contact h3 { font-size: 21px !important; }
+p, li { font-size: 18px !important; }
+table { font-size: 17px !important; }
+th, td { padding: 14px 16px !important; }
+.quick-card b { font-size: 17px !important; }
+.quick-card small { font-size: 15px !important; }
+.interest p, .subjects p, .experience-list p, .experience-list small,
+.admin-grid span, .publication p, .pub-grid li, .workshop-grid span,
+.skill-block p, .contact-details p, .social-note { font-size: 17px !important; }
+.btn { font-size: 17px !important; }
+footer { font-size: 16px !important; }
+
+/* Make each menu item a separate page */
+.page-section { min-height: calc(100vh - 90px); display:flex; align-items:flex-start; }
+</style>
+
+</head>
+<body>
+<header class="topbar">
+<nav class="nav">
+<a class="brand" href="home.html">PADIYAPPA KOOGATI</a>
+<button class="menu-btn" aria-label="Open menu">☰</button>
+<div class="nav-links">
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="academic.html">Academic</a>
+<a href="research.html">Research</a>
+<a href="publications.html" class="active">Publications</a>
+<a href="experience.html">Experience</a>
+<a href="workshops.html">Workshops</a>
+<a href="skills.html">Skills</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="page-section section light">
+  <div class="section-inner">
+    <p class="small-label">PUBLICATIONS</p>
+    <h2>Research &amp; Conference Contributions</h2>
+    <article class="publication">
+  <div class="pub-year">2012</div>
+
+  <div>
+    <h3>Optimizing the Recognition of Eye States in Real Time Video</h3>
+
+    <p><b>Padiyappa Koogati, Vinay Kumar K.</b></p>
+
+    <p>
+      International Journal on Advanced Computer Engineering and Communication
+      Technology (IJACECT), Volume 1, Issue 2, 2012, pp. 1–4.
+    </p>
+
+    <span class="tag">ISSN (Print): 2278-5140</span>
+
+    <p>
+      <a href="http://www.irdindia.in/journal_ijacect/pdf/vol1_iss2/1.pdf" target="_blank" class="paper-link">
+        📄 View Paper
+      </a>
+    </p>
+  </div>
+</article>
+    <div class="pub-grid">
+      <div><h3>International Conferences</h3><ul><li>Optimizing the Recognition of Eye States in Real Time Video — 2012</li><li>Usage of E-Resources — 2017</li></ul></div>
+      <div><h3>National Conferences / Seminar</h3><ul><li>Cloud Computing in Libraries</li><li>21st Century Digital Library</li><li>A Study on the Open Source Digital Library Software’s</li></ul></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><span>© 2026 Padiyappa Koogati</span><a href="home.html">Back to home ↑</a></footer>
+
+<script>
+const btn=document.querySelector('.menu-btn');
+const nav=document.querySelector('.nav-links');
+if (btn) btn.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+
+</body>
+</html>
